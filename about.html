@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<body>
+    <header>
+        <p id="top1">AlokoWebs</p>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="firstContent">
+        <div class="container1">
+            <h1>Welcome to my BioData page</h1>
+            <p>Discover more about me and what I offer</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="containerBorder">
+            <h2>About Me</h2>
+            <p>Am Aloko Lambert, a Developer who is also a programming Tutor
+                . I have been coding since 2022 as a student of the college at my school page
+                .Life has been sweet coding in my life as my first programming experience and 
+                long time sitting with the code editor and just doing  alot of sh***t, still not been ungrateful 
+                so i continue to code and hoping  for better brain function.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="containerBorder">
+            <h2>My Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>Graphic Design</li>
+                <li>SEO Optimization</li>
+                <li>Programming Tuition</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="containerBorder">
+            <h2>Programming languages learned</h2>
+            <ul>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>Kotlin</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <fieldset>
+                <legend>Contact me my dear customer</legend>
+                     
+            <form>
+                         
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="please name" class="textPlace" pattern="[A-Za-z/\.]{3,}" title="only letters" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="textPlace" placeholder="example@gmail.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="type your message" required></textarea>
+
+                <input type="submit" value="Send" title="Thank you">
+            </form>
+                </fieldset>
+
+            <p id="num1">Or Call me on 0531538944</p>
+            <br>
+            <button type="button" id="topbtn"><a href="#top1">Top</a></button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Services. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="about.js"></script>
+</body>
+</html>

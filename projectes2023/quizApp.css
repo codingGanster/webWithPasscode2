@@ -1,0 +1,51 @@
+body{
+    background: rgb(0,90,0);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:  #fff;
+}
+#question{
+    color: #ff0;
+}
+#score{
+    color: #ff0;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(120,30,0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#developer{
+    color:   #fff;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.choice {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>using HTML validate the form data</title>
+    <style>
+    body{
+      text-align: center;
+    }
+      input[type=submit]{
+        background-color: #000;
+        border-radius: 5px;
+        color: #ff0;
+        padding: 5px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <h1>Validated with only HTML</h1>
+    <br />
+    <hr />
+    <!--FORM CODES AND VALIDATION CODES-->
+    <form action="action.page" method="post" target="_blank" name="form1">
+      <label for="fname">First Name</label><br />
+      <input type="text" name="firstName" id="fname" placeholder="first name"  pattern="[A-Za-z]{3,}" title="only alphabets,at least 3 letters" required autofocus/>
+      <br /><br />
+      <label for="sname">Surname</label><br />
+      <input type="text" name="Surname" id="sname" placeholder="surname"  pattern="[A-Za-z]{3,}" title="only alphabets,at least 3 letters" required/>
+      <br /><br />
+      <label for="email">Email</label><br />
+      <input
+        type="email"
+        name="Email"
+        id="email"
+        placeholder="example@gmail.com" pattern="[A-Za-z0-9]+@+.+[a-z]{3}" title="A Valid email must add @ and .something" required
+      />
+      <br /><br />
+      <label for="pword">password</label><br />
+      <input type="password" name="password" id="pword" pattern="[A-Za-z0-9]{6,}" title="Must be at least 6 characters" required />
+      <br /><br />
+      <label for="phone">Mobile Number</label><br />
+      <input type="tel" name="Mobile" id="phone"  pattern="[0-9]{10}" title="only numbers,must be 10 digits" required/>
+      <br /><br />
+      <label for="age">Your Age</label><br />
+      <input type="number" name="Age" id="age" min="1" max="30" title="from 1 to 30 years only" required />
+      <br><br>
+      <label for="education" title="please select" >Level of Education</label><br>
+  <input type="checkbox" name="Primary" id="PEDU" value="primary">
+  <label for="PEDU">Primary</label>
+  <br>
+  <input type="checkbox" name="jhs" id="jhsEDU" value="jhs">
+  <label for="jhsEDU">JHS</label>
+  <br>
+  <input type="checkbox" name="secondary" id="shsEDU" value="SHS">
+  <label for="shsEDU">SHS</label>
+      <br>
+      <br /><br />
+      <label for="gender" title="please select your Gender">Gender</label><br />
+      <input type="radio" name="Gender" id="male" value="male" />male
+      <br />
+      <input type="radio" name="Gender" id="female" value="female" />Female
+      <br /><br />
+      <label for="languages"> Select your Programming knowledge on languages</label><br>
+      <select name="Pskills" id="languages" multiple required>
+        <optgroup label="Web languages">
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JS">JS</option>
+        </optgroup>
+        <optgroup label="General Coding">
+          <option value="C++">C++</option>
+          <option value="C">C</option>
+          <option value="JAVA">JAVA</option>
+          <option value="C#">C#</option>
+          <option value="F#">F#</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation with JS</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form validation with Javascript</h1>
+    <form action="me.php" method="post" target="_blank" name="userForm" onsubmit="return checkValues()">
+        <label for="fName"> First Name</label>
+        <br>
+        <input type="text" name="firstName" id="fName" placeholder="enter first name">
+        <br><br>
+        <label for="sName">Surname</label>
+        <br>
+        <input type="text" name="surname" id="sName" placeholder="enter surname">
+        <br><br>
+        <label for="phone">Mobile Number</label>
+        <br>
+        <input type="tel" name="mobile" id="phone" placeholder="mobile number">
+     
+        <br><br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="Email" id="email">
+        <br><br>
+        <label for="pword">Password</label>
+        <br>
+        <input type="password" name="password" id="pword" placeholder="password">
+        <br><br>
+        <br>
+        <label for="gender">Gender:</label>
+        <br>
+        <input type="radio" value="male" name="gender" id="male">Male
+        <br>
+        <input type="radio" value="female" name="gender" id="female">Female
+        <br><br>
+        <input type="submit" value="submit">
+     
+    </form>
+<script src="AppVal.js"></script>
+</body>
+</html>

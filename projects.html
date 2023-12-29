@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects blog</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+<strong id="bars">&#9776;</strong>
+    </label>
+   <nav class="sidebar">
+    <p>WebVibes coding<img src="images/aloko.png" alt="picture"></p>
+    <p id="time"></p>
+    <ul>
+        <li><a href="#" onclick="alert('sorry,not accessible\n You have access to only the projects')">About Me</a></li>
+        <li><a href="projectes2023/quizApp.html">QuizApp</a></li>
+        <li><a href="projectes2023/todoApp.html">ToDOListApp</a></li>
+        <li><a href="projectes2023/validationJS.html">FormValid1</a></li>
+        <li><a href="projectes2023/ValWithHTML.html">FormValid2</a></li>
+        <li><a href="home.html">Home</a></li>
+    </ul>
+   </nav>
+ <main>
+    <section id="bgVideo">
+    
+        <video src="videos/sg2.mp4" controls autoplay muted loop></video>
+        <br>
+        <p id="date"></p><strong>This video is muted,you can unmute it</strong>
+    </section>
+ </main>
+ <script>
+    setInterval(function(){
+        const time=document.querySelector('#time');
+        time.innerHTML=new Date().toLocaleTimeString();
+    })
+
+    setInterval(function(){
+        const date=document.querySelector('#date');
+        date.innerHTML=new Date().toDateString();
+    })
+
+ </script>
+</body>
+</html>
